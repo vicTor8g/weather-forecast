@@ -22,3 +22,10 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
+
+/* MAIN INFO */
+
+.main-section-info,
+.main-section-extra {padding: 8px;}
+
+/* MAIN EXTRA */
