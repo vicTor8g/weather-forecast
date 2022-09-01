@@ -12,3 +12,13 @@ body {
     background-image: linear-gradient(to right, #00000052, #000000A1),
     url('../images/morning_background.jpg');
 }
+
+/* MAIN */
+.main {
+    padding: 16px;
+    margin: 16px 8px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
