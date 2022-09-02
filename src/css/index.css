@@ -99,8 +99,6 @@ body {
     height: 744px;
     padding: 16px;
 
-    background: fixed;
-
     backdrop-filter: blur(16px);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
