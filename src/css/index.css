@@ -37,10 +37,9 @@ body {
 }
 
 .section-extra-input {
-    margin: auto;
     width: 256px;
     padding: 8px;
-    margin: 16px 0;
+    margin-top: 16px;
 
     color: #FFFFFF;
 
@@ -49,5 +48,12 @@ body {
     border-left: none;
     border-right: none;
     background-color: transparent;
-    border-bottom: 2px solid #FFFFFF52;
+}
+
+.section-extra-line {
+    margin: auto;
+    width: 464px;
+    margin: 16px 0;
+
+    border: 1px solid #FFFFFF52;
 }
