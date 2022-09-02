@@ -8,6 +8,7 @@ const humidityValue = document.querySelector('.info-humidity-value');
 const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
 const sunriseTimeValue = document.querySelector('.info-sunrise-value');
+const cloudnessValue = document.querySelector('.info-cloudness-value');
 
 const cityName = document.querySelector('.content-text-city');
 const weatherDescriptionName = document.querySelector('.content-text-title');
@@ -33,6 +34,7 @@ const weatherLogic = () => {
             const openWeatherJsonData = await openWeatherFetchResponse.json();
 
             windValue.innerHTML = `${openWeatherJsonData.wind.speed}m/s`;
+            cloudnessValue.innerHTML = `${openWeatherJsonData.clouds.all}%`;
             humidityValue.innerHTML = `${openWeatherJsonData.main.humidity}%`;
             weatherDescriptionName.innerHTML = `${openWeatherJsonData.weather[0].description}`;
 
