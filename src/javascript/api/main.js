@@ -8,6 +8,7 @@ const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
 
 const cityName = document.querySelector('.content-text-city');
+const weatherDescriptionName = document.querySelector('.content-text-title');
 const currentTemperatureValue = document.querySelector('.info-content-value');
 
 const weatherLogic = () => {
@@ -23,6 +24,8 @@ const weatherLogic = () => {
         let longitudeValue = geocodingJsonData[0].lon;
         cityName.innerHTML = `${geocodingJsonData[0].name}`;
 
+        console.log(geocodingJsonData);
+
         const getCityWeather = async () => {
             const openWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudeValue}&lon=${longitudeValue}&appid=${apiKey}`;
 
@@ -31,6 +34,7 @@ const weatherLogic = () => {
 
             windValue.innerHTML = `${openWeatherJsonData.wind.speed}m/s`;
             humidityValue.innerHTML = `${openWeatherJsonData.main.humidity}%`;
+            weatherDescriptionName.innerHTML = `${openWeatherJsonData.weather[0].description}`;
 
             console.log(openWeatherJsonData);
 
