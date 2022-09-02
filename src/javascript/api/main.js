@@ -7,7 +7,7 @@ const sunsetTimeValue = document.querySelector('.info-sunset-value');
 const humidityValue = document.querySelector('.info-humidity-value');
 const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
-const sunriseTimeValue = document.querySelector('.info-surise-value');
+const sunriseTimeValue = document.querySelector('.info-sunrise-value');
 
 const cityName = document.querySelector('.content-text-city');
 const weatherDescriptionName = document.querySelector('.content-text-title');
@@ -60,9 +60,17 @@ const weatherLogic = () => {
                     if (newSunsetDate.getHours() < 10 && newSunsetDate.getMinutes() < 10) {
                         sunsetTimeValue.innerHTML = `0${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
                     } else if (newSunsetDate.getHours() < 10) {
-                        sunsetTimeValue.innerHTML = `${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
+                        sunsetTimeValue.innerHTML = `0${newSunsetDate.getHours()}:${newSunsetDate.getMinutes()}`;
                     } else if (newSunsetDate.getMinutes() < 10) {
                         sunsetTimeValue.innerHTML = `${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
+                    }
+
+                    if (newSunriseDate.getHours() < 10 && newSunriseDate.getMinutes() < 10) {
+                        sunriseTimeValue.innerHTML = `0${newSunriseDate.getHours()}:0${newSunriseDate.getMinutes()}`;
+                    } else if (newSunriseDate.getHours() < 10) {
+                        sunriseTimeValue.innerHTML = `0${newSunriseDate.getHours()}:${newSunriseDate.getMinutes()}`;
+                    } else if (newSunriseDate.getMinutes() < 10) {
+                        sunriseTimeValue.innerHTML = `${newSunriseDate.getHours()}:0${newSunriseDate.getMinutes()}`;
                     }
                 }
                 formatCurrentTime();
