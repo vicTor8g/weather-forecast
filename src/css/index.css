@@ -15,10 +15,11 @@ body {
     color: #FFFFFF;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to right, #00000052, #000000A1),
-    url('../images/morning_background.jpg');
+    url('../images/night_background.jpeg');
 }
 
 /* MAIN */
