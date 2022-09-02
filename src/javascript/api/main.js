@@ -24,8 +24,6 @@ const weatherLogic = () => {
         let longitudeValue = geocodingJsonData[0].lon;
         cityName.innerHTML = `${geocodingJsonData[0].name}`;
 
-        console.log(geocodingJsonData);
-
         const getCityWeather = async () => {
             const openWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudeValue}&lon=${longitudeValue}&appid=${apiKey}`;
 
@@ -50,6 +48,11 @@ const weatherLogic = () => {
             convertKelvinToCelsius();
         }
         getCityWeather();
+
+        const getCurrentTime = () => {
+            
+        }
+        getCurrentTime();
     }
     getCityCoordinates();
 }
