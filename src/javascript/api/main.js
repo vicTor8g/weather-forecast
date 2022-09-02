@@ -2,6 +2,10 @@ const apiKey = `1940cb5d0df94f3a8daf8758e3359b64`;
 const searchInput = document.querySelector('.section-extra-input');
 const searchButton = document.querySelector('.section-extra-button');
 
+const minTemperatureValue = document.querySelector('.info-min-value');
+const maxTemperatureValue = document.querySelector('.info-max-value');
+const currentTemperatureValue = document.querySelector('.info-content-value');
+
 const weatherLogic = () => {
 
     const getCityCoordinates = async () => {
@@ -20,7 +24,16 @@ const weatherLogic = () => {
             const openWeatherFetchResponse = await fetch(openWeatherURL);
             const openWeatherJsonData = await openWeatherFetchResponse.json();
 
-            console.log(openWeatherJsonData);
+            const convertKelvinToCelsius = () => {
+                const celsiusMinTemperature = (openWeatherJsonData.main.temp_min - 273.15);
+                const celsiusMaxTemperature = (openWeatherJsonData.main.temp_max - 273.15);
+                const celsiusCurrentTemperature = (openWeatherJsonData.main.temp - 273.15);
+
+                minTemperatureValue.innerHTML = `${celsiusMinTemperature.toFixed()}º`;
+                maxTemperatureValue.innerHTML = `${celsiusMaxTemperature.toFixed()}º`;
+                currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}º`;
+            }
+            convertKelvinToCelsius();
         }
         getCityWeather();
     }
