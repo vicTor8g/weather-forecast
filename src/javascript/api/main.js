@@ -3,9 +3,11 @@ const searchInput = document.querySelector('.section-extra-input');
 const searchButton = document.querySelector('.section-extra-button');
 
 const windValue = document.querySelector('.info-wind-value');
+const sunsetTimeValue = document.querySelector('.info-sunset-value');
 const humidityValue = document.querySelector('.info-humidity-value');
 const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
+const sunriseTimeValue = document.querySelector('.info-surise-value');
 
 const cityName = document.querySelector('.content-text-city');
 const weatherDescriptionName = document.querySelector('.content-text-title');
@@ -46,13 +48,28 @@ const weatherLogic = () => {
                 currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}º`;
             }
             convertKelvinToCelsius();
+
+            const getCurrentTime = () => {
+                const sunsetTimestamp = openWeatherJsonData.sys.sunset;
+                const sunriseTimestamp = openWeatherJsonData.sys.sunrise;
+
+                const newSunsetDate = new Date(sunsetTimestamp * 1000);
+                const newSunriseDate = new Date(sunriseTimestamp * 1000);
+
+                const formatCurrentTime = () => {
+                    if (newSunsetDate.getHours() < 10 && newSunsetDate.getMinutes() < 10) {
+                        sunsetTimeValue.innerHTML = `0${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
+                    } else if (newSunsetDate.getHours() < 10) {
+                        sunsetTimeValue.innerHTML = `${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
+                    } else if (newSunsetDate.getMinutes() < 10) {
+                        sunsetTimeValue.innerHTML = `${newSunsetDate.getHours()}:0${newSunsetDate.getMinutes()}`;
+                    }
+                }
+                formatCurrentTime();
+            }
+            getCurrentTime();
         }
         getCityWeather();
-
-        const getCurrentTime = () => {
-            
-        }
-        getCurrentTime();
     }
     getCityCoordinates();
 }
