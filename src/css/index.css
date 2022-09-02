@@ -44,16 +44,38 @@ body {
     backdrop-filter: blur(16px);
 }
 
+.section-extra-div {
+    padding: 8px;
+    margin: 16px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-extra-input {
     width: 296px;
     padding: 8px;
-    margin: 16px 0;
 
     color: #FFFFFF;
 
     outline: none;
-    border-radius: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.section-extra-button {
+    width: 64px;
+    padding: 8px;
+
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-top-right-radius: 8px;
+    background-color: transparent;
+    border-bottom-right-radius: 8px;
 }
 
 .section-extra-title {
