@@ -62,7 +62,7 @@ body {
 .info-content-text {margin: 0 16px;}
 
 .content-text-city {
-    padding: 8px 8px 0 8px;
+    padding: 8px 8px 0 0;
 
     font-size: 64px;
     letter-spacing: 4px;
@@ -70,7 +70,7 @@ body {
 
 .content-text-time {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
 }
 
