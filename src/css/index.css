@@ -41,12 +41,14 @@ body {
     width: 512px;
     padding: 16px;
 
+    border-radius: 8px;
     backdrop-filter: blur(16px);
+    border: 1px solid #FFFFFF94;
 }
 
 .section-extra-div {
     padding: 8px;
-    margin: 16px 0;
+    margin: 16px 0 32px 0;
 
     display: flex;
     align-items: center;
@@ -60,20 +62,22 @@ body {
     color: #FFFFFF;
 
     outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-top-left-radius: 8px;
+    border: 1px solid #FFFFFF94;
     background-color: transparent;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom-left-radius: 8px;
 }
 
 .section-extra-button {
     width: 64px;
     padding: 8px;
 
+    cursor: pointer;
+    color: #FFFFFF;
+
     outline: none;
-    border: 1px solid #FFFFFF;
     border-top-right-radius: 8px;
+    border: 1px solid #FFFFFF94;
     background-color: transparent;
     border-bottom-right-radius: 8px;
 }
