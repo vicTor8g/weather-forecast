@@ -55,7 +55,8 @@ body {
 }
 
 .info-content-value {
-    padding: 8px;
+    padding: 8px 8px 0 8px;
+
     font-size: 72px;
 }
 
@@ -91,6 +92,7 @@ body {
 
     font-size: 24px;
     font-weight: normal;
+    text-transform: capitalize;
 }
 
 /* MAIN EXTRA */
