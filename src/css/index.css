@@ -53,7 +53,7 @@ body {
 
 .section-extra-div {
     padding: 8px;
-    margin: 16px 0 32px 0;
+    margin: 24px 0 72px 0;
 
     display: flex;
     align-items: center;
@@ -61,9 +61,10 @@ body {
 }
 
 .section-extra-input {
-    width: 296px;
-    padding: 8px;
+    width: 328px;
+    padding: 16px;
 
+    font-size: 16px;
     color: #FFFFFF;
 
     outline: none;
@@ -74,10 +75,11 @@ body {
 }
 
 .section-extra-button {
-    width: 64px;
-    padding: 8px;
+    width: 72px;
+    padding: 16px;
 
     cursor: pointer;
+    font-size: 16px;
     color: #FFFFFF;
 
     outline: none;
