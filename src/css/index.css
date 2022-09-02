@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('./font/roboto-regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +12,10 @@
 }
 
 body {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to right, #00000052, #000000A1),
