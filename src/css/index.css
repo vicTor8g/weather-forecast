@@ -140,6 +140,8 @@ body {
     font-size: 16px;
     color: #FFFFFF;
 
+    transition: .5s ease all;
+
     outline: none;
     border-top-right-radius: 8px;
     border: 1px solid #FFFFFF94;
@@ -148,7 +150,9 @@ body {
 }
 
 .section-extra-button:hover {
+    color: #000000;
     
+    background-color: #FFFFFF;
 }
 
 .section-extra-title {
