@@ -23,9 +23,9 @@ body {
 
 /* MAIN */
 .main {
-    padding: 16px;
     padding-right: 0;
-    margin: 16px 8px 16px 0;
+    margin: 0 0 16px 8px;
+    padding: 0 0 16px 16px;
 
     display: flex;
     align-items: flex-start;
@@ -41,9 +41,14 @@ body {
     width: 512px;
     padding: 16px;
 
-    border-radius: 8px;
+    border-top: none;
+    border-right: none;
     backdrop-filter: blur(16px);
-    border: 1px solid #FFFFFF94;
+    border-left: 1px solid #FFFFFF94;
+    border-bottom: 1px solid #FFFFFF94;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .section-extra-div {
