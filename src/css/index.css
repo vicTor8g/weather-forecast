@@ -147,6 +147,10 @@ body {
     border-bottom-right-radius: 8px;
 }
 
+.section-extra-button:hover {
+    
+}
+
 .section-extra-title {
     padding: 8px;
     margin: 16px 0;
