@@ -127,6 +127,8 @@ body {
     border-bottom-left-radius: 8px;
 }
 
+.section-extra-input::placeholder {color: #FFFFFF;}
+
 .section-extra-button {
     width: 72px;
     padding: 16px;
