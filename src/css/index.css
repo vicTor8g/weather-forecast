@@ -33,8 +33,46 @@ body {
 }
 
 /* MAIN INFO */
+.main-section-info {
+    padding: 16px;
+    margin: 16px 0;
+}
 
-.main-section-info {padding: 8px;}
+.section-info-title {
+    margin: 16px;
+    padding: 8px 0;
+
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.section-info-content {
+    margin-top: 256px;
+
+    display: flex;
+    align-items: center;
+}
+
+.info-content-value {
+    padding: 8px;
+    font-size: 72px;
+}
+
+.info-content-text {margin: 0 16px;}
+
+.content-text-city {
+    padding: 8px 8px 0 8px;
+
+    font-size: 64px;
+    letter-spacing: 4px;
+}
+
+.content-text-time {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
 
 /* MAIN EXTRA */
 .main-section-extra {
