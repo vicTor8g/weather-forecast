@@ -4,9 +4,10 @@ const searchButton = document.querySelector('.section-extra-button');
 
 const windValue = document.querySelector('.info-wind-value');
 const humidityValue = document.querySelector('.info-humidity-value');
-
 const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
+
+const cityName = document.querySelector('.content-text-city');
 const currentTemperatureValue = document.querySelector('.info-content-value');
 
 const weatherLogic = () => {
@@ -20,6 +21,7 @@ const weatherLogic = () => {
 
         let latitudeValue = geocodingJsonData[0].lat;
         let longitudeValue = geocodingJsonData[0].lon;
+        cityName.innerHTML = `${geocodingJsonData[0].name}`;
 
         const getCityWeather = async () => {
             const openWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudeValue}&lon=${longitudeValue}&appid=${apiKey}`;
@@ -39,7 +41,7 @@ const weatherLogic = () => {
 
                 minTemperatureValue.innerHTML = `${celsiusMinTemperature.toFixed()}º`;
                 maxTemperatureValue.innerHTML = `${celsiusMaxTemperature.toFixed()}º`;
-                currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}ºC`;
+                currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}º`;
             }
             convertKelvinToCelsius();
         }
