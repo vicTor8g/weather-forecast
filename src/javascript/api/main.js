@@ -2,6 +2,9 @@ const apiKey = `1940cb5d0df94f3a8daf8758e3359b64`;
 const searchInput = document.querySelector('.section-extra-input');
 const searchButton = document.querySelector('.section-extra-button');
 
+const windValue = document.querySelector('.info-wind-value');
+const humidityValue = document.querySelector('.info-humidity-value');
+
 const minTemperatureValue = document.querySelector('.info-min-value');
 const maxTemperatureValue = document.querySelector('.info-max-value');
 const currentTemperatureValue = document.querySelector('.info-content-value');
@@ -24,6 +27,11 @@ const weatherLogic = () => {
             const openWeatherFetchResponse = await fetch(openWeatherURL);
             const openWeatherJsonData = await openWeatherFetchResponse.json();
 
+            windValue.innerHTML = `${openWeatherJsonData.wind.speed}m/s`;
+            humidityValue.innerHTML = `${openWeatherJsonData.main.humidity}%`;
+
+            console.log(openWeatherJsonData);
+
             const convertKelvinToCelsius = () => {
                 const celsiusMinTemperature = (openWeatherJsonData.main.temp_min - 273.15);
                 const celsiusMaxTemperature = (openWeatherJsonData.main.temp_max - 273.15);
@@ -31,7 +39,7 @@ const weatherLogic = () => {
 
                 minTemperatureValue.innerHTML = `${celsiusMinTemperature.toFixed()}º`;
                 maxTemperatureValue.innerHTML = `${celsiusMaxTemperature.toFixed()}º`;
-                currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}º`;
+                currentTemperatureValue.innerHTML = `${celsiusCurrentTemperature.toFixed()}ºC`;
             }
             convertKelvinToCelsius();
         }
