@@ -16,7 +16,8 @@ body {
 /* MAIN */
 .main {
     padding: 16px;
-    margin: 16px 8px;
+    padding-right: 0;
+    margin: 16px 8px 16px 0;
 
     display: flex;
     align-items: flex-start;
@@ -25,7 +26,28 @@ body {
 
 /* MAIN INFO */
 
-.main-section-info,
-.main-section-extra {padding: 8px;}
+.main-section-info {padding: 8px;}
 
 /* MAIN EXTRA */
+.main-section-extra {
+    width: 512px;
+    padding: 16px;
+
+    backdrop-filter: blur(16px);
+}
+
+.section-extra-input {
+    margin: auto;
+    width: 256px;
+    padding: 8px;
+    margin: 16px 0;
+
+    color: #FFFFFF;
+
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 2px solid #FFFFFF52;
+}
