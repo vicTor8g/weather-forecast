@@ -3,6 +3,7 @@ const searchInput = document.querySelector('.section-extra-input');
 const searchButton = document.querySelector('.section-extra-button');
 
 const windValue = document.querySelector('.info-wind-value');
+const countryValue = document.querySelector('.info-country-value');
 const sunsetTimeValue = document.querySelector('.info-sunset-value');
 const humidityValue = document.querySelector('.info-humidity-value');
 const minTemperatureValue = document.querySelector('.info-min-value');
@@ -27,6 +28,16 @@ const weatherLogic = () => {
         let longitudeValue = geocodingJsonData[0].lon;
         cityName.innerHTML = `${geocodingJsonData[0].name}`;
 
+        const getCountryName = async () => {
+            const countriesURL = `https://restcountries.com/v3.1/alpha/${geocodingJsonData[0].country}`;
+
+            const countriesFetchResponse = await fetch(countriesURL);
+            const countriesJsonData = await countriesFetchResponse.json();
+
+            countryValue.innerHTML = `${countriesJsonData[0].name.common}`
+        }
+        getCountryName();
+
         const getCityWeather = async () => {
             const openWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudeValue}&lon=${longitudeValue}&appid=${apiKey}`;
 
@@ -37,8 +48,6 @@ const weatherLogic = () => {
             cloudnessValue.innerHTML = `${openWeatherJsonData.clouds.all}%`;
             humidityValue.innerHTML = `${openWeatherJsonData.main.humidity}%`;
             weatherDescriptionName.innerHTML = `${openWeatherJsonData.weather[0].description}`;
-
-            console.log(openWeatherJsonData);
 
             const convertKelvinToCelsius = () => {
                 const celsiusMinTemperature = (openWeatherJsonData.main.temp_min - 273.15);
