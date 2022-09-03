@@ -34,7 +34,7 @@
 
 ## About
 
-:cloud: Weather Forecast - This type of website is used to store a programmer's projects, as well as their skills and ways of communication, helping to demonstrate their competencies regarding the technologies they know.
+:cloud: Weather Forecast - An application that provides daily weather forecast data for a given location, which can and should be searched by the user.
 
 ---
 
