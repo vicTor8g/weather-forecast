@@ -18,7 +18,7 @@ const currentTemperatureValue = document.querySelector('.info-content-value');
 const weatherLogic = () => {
     const getCityCoordinates = async () => {
         const inputValue = searchInput.value;
-        const geocodingURL = `httpss://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${apiKey}`;
+        const geocodingURL = `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${apiKey}`;
 
         const geocodingFetchResponse = await fetch(geocodingURL);
         const geocodingJsonData = await geocodingFetchResponse.json();
