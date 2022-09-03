@@ -42,7 +42,7 @@
 
 - [x] Search City
 - [x] CSS Flexbox
-- [ ] Responsive Design
+- [x] Responsive Design
 - [x] Consume API (OpenWeather)
 
 ---
