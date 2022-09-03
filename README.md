@@ -50,7 +50,11 @@
 ## Layout
 
 <p align="center">
-  <img alt="Design Image" title="Layout Web" src="./src/img/design/design_web_one.png" width="800px">
+  <img alt="Design Image" title="Layout Web" src="./src/images/design/design_web_one.png" width="800px">
+</p>
+
+<p align="center">
+  <img alt="Design Image" title="Layout Web" src="./src/images/design/design_web_two.png" width="800px">
 </p>
 
 ## Tech Stack
