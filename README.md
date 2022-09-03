@@ -40,8 +40,8 @@
 
 ## Features
 
-- [x] CSS Flexbox
 - [x] Search City
+- [x] CSS Flexbox
 - [ ] Responsive Design
 - [x] Consume API (OpenWeather)
 
