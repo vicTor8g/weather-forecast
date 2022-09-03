@@ -67,9 +67,10 @@ The following tools were used in the construction of the project:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
--   Icons:  **[Font Awesome](https://fontawesome.com/)**
 -   Fonts:  **[Roboto](https://fonts.google.com/specimen/Roboto?query=Roboto)**
+-   Icons:  **[Font Awesome](https://fontawesome.com/)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   APIs: **[OpenWeatherAPI](https://openweathermap.org/current)** -> **[GeocodingAPI](https://openweathermap.org/api/geocoding-api)**, **[REST Countries](https://restcountries.com/#rest-countries)**
 
 
 ---
