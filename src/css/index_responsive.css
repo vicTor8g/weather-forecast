@@ -42,3 +42,46 @@
 
     .extra-info-div h2 {font-size: 16px;}
 }
+
+@media screen and (min-width: 601px) {
+    .main {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-info-title {text-align: center;}
+
+    .section-info-content {
+        margin-top: 128px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info-content-value {font-size: 64px;}
+
+    .content-text-city {
+        padding-right: 0;
+
+        font-size: 64px;
+        text-align: center;
+    }
+
+    .content-text-time {text-align: center;}
+
+    /* SECTION EXTRA */
+    .main-section-extra {
+        padding: 8px;
+        width: 584px;
+        margin-bottom: 16px;
+    }
+
+    .extra-info-div h2 {font-size: 24px;}
+}
