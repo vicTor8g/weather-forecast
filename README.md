@@ -1,19 +1,19 @@
 <h1 align="center">
-   :briefcase: <a href="#"> Personal Portfolio </a>
+   :cloud: <a href="#"> Wheater Forecast </a>
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vicTor8g/personal-portfolio?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vicTor8g/weather-forecast?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vicTor8g/personal-portfolio">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/vicTor8g/weather-forecast">
   
-  <a href="https://github.com/vicTor8g/personal-portfolio/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vicTor8g/personal-portfolio">
+  <a href="https://github.com/vicTor8g/weather-forecast/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vicTor8g/weather-forecast">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/vicTor8g/personal-portfolio/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/vicTor8g/personal-portfolio?style=social">
+   <a href="https://github.com/vicTor8g/weather-forecast/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/vicTor8g/weather-forecast?style=social">
   </a> 
 </p>
 
@@ -34,16 +34,16 @@
 
 ## About
 
-:briefcase: Personal Portfolio - This type of website is used to store a programmer's projects, as well as their skills and ways of communication, helping to demonstrate their competencies regarding the technologies they know.
+:cloud: Weather Forecast - This type of website is used to store a programmer's projects, as well as their skills and ways of communication, helping to demonstrate their competencies regarding the technologies they know.
 
 ---
 
 ## Features
 
-- [x] CSS Modal
 - [x] CSS Flexbox
-- [x] Responsive Design
-- [x] Scroll Reveal in Page
+- [x] Search City
+- [ ] Responsive Design
+- [x] Consume API (OpenWeather)
 
 ---
 
