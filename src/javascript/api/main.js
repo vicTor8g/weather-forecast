@@ -16,7 +16,6 @@ const weatherDescriptionName = document.querySelector('.content-text-title');
 const currentTemperatureValue = document.querySelector('.info-content-value');
 
 const weatherLogic = () => {
-
     const getCityCoordinates = async () => {
         const inputValue = searchInput.value;
         const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${apiKey}`;
@@ -93,4 +92,23 @@ const weatherLogic = () => {
     getCityCoordinates();
 }
 
-searchButton.addEventListener('click', weatherLogic);
+searchButton.addEventListener('click', () => {
+    const inputSearchValue = searchInput.value;
+
+    const validateInputValue = () => {
+        if (!inputSearchValue) {
+            setTimeout(() => {
+                searchInput.classList.add('error');
+                searchButton.classList.add('error');
+
+                setTimeout(() => {
+                    searchInput.classList.remove('error');
+                    searchButton.classList.remove('error');
+                }, 2500);
+            }, 100);
+        } else {
+            weatherLogic();
+        }
+    }
+    validateInputValue();
+});  
