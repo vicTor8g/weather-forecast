@@ -123,6 +123,7 @@ body {
 
     font-size: 16px;
     color: #FFFFFF;
+    transition: .5s ease all;
 
     outline: none;
     border-top-left-radius: 8px;
@@ -182,3 +183,6 @@ body {
     font-size: 20px;
     font-weight: normal;
 }
+
+/* ERROR */
+.error {border: 1px solid #D72B2B;}
