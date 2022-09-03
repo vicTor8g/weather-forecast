@@ -1,5 +1,5 @@
 <h1 align="center">
-   :cloud: <a href="#"> Wheater Forecast </a>
+   :cloud: <a href="#"> Weather Forecast </a>
 </h1>
 
 <p align="center">
